@@ -1,0 +1,26 @@
+
+./src/Common.hs,146
+module Common Common1,2
+getDirectories getDirectories7,8
+getDirectories getDirectories8,9
+printRaw printRaw12,13
+printRaw printRaw13,14
+
+./commands/SortPath.hs,136
+module Main Main0,1
+main main11,12
+main main12,13
+work work35,36
+work work36,37
+sortByM sortByM44,45
+sortByM sortByM45,46
+
+./commands/ListDirs.hs,87
+module Main Main1,2
+main main8,9
+main main9,10
+work work40,41
+work work41,42
+
+./Setup.hs,15
+main main1,2
