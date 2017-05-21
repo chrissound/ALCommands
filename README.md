@@ -1,5 +1,5 @@
-# Cabal Stack Awesome Init
+# ALCommands
 
-Saves having to go through the tedious `cabal init` adding a .ghci file to show all warnings.
-
-Just git clone this project and then `cp dir/* newAwesomeProject/`, and then run `ghcid.sh` and wooooo!
+Provides two executables of:
+alListDir - list directories
+sortPath - sort directories by time / name
