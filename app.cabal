@@ -25,7 +25,15 @@ library
                      , time
   default-language:    Haskell2010
 
-executable alListDir
+executable alcPrompt
+  hs-source-dirs:      commands
+  main-is:             Prompt.hs
+  build-depends:       base >=4.9 && <4.10
+                     , optparse-applicative
+                     , app
+                     , split
+
+executable alcListDir
   hs-source-dirs:      commands
   main-is:             ListDirs.hs
   build-depends:       base >=4.9 && <4.10
@@ -36,7 +44,7 @@ executable alListDir
   -- hs-source-dirs:      
   default-language:    Haskell2010
 
-executable alSortPath
+executable alcSortPath
   hs-source-dirs:      commands
   main-is:             SortPath.hs
   build-depends:       base >=4.9 && <4.10
@@ -46,5 +54,15 @@ executable alSortPath
                      , containers
                      , app
                      , time
-  -- hs-source-dirs:      
-  default-language:    Haskell2010
+ 
+
+-- executable alcJsonAppend
+--   hs-source-dirs:      commands
+--   main-is:             JsonAppend.hs
+--   build-depends:       base >=4.9 && <4.10
+--                      , optparse-applicative
+--                      , aeson
+--                      , app
+--                      , string-conversions
+--   -- hs-source-dirs:      
+--   default-language:    Haskell2010

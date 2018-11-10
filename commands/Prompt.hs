@@ -73,7 +73,8 @@ applyAll (f:fs) = applyAll fs . f
 work :: Path -> Int -> IO ()
 work a b = do
   let a' = applyAll
-        [ replace "/home/chris/Projects/Clients" "»Clients"
+        [ replace "/home/chris/Clients/Eduonix" "»Eduonix"
+        , replace "/home/chris/Projects/Clients" "»Clients"
         , replace "/home/chris/Projects/Haskell" "»Haskell"
         , replace "/home/chris/Projects" "»Projects"
         , replace "/home/chris/" "~"

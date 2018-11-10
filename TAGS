@@ -6,6 +6,37 @@ getDirectories getDirectories8,9
 printRaw printRaw12,13
 printRaw printRaw13,14
 
+./commands/Prompt.hs,504
+module Main Main1,2
+type Path Path11,12
+main main13,14
+main main14,15
+getShort getShort36,37
+getShort getShort37,38
+iteration iteration46,47
+iteration iteration47,48
+joinBy joinBy49,50
+joinBy joinBy50,51
+zipLeftover zipLeftover53,54
+zipLeftover zipLeftover54,55
+lastN lastN59,60
+lastN lastN60,61
+splitAtN splitAtN62,63
+splitAtN splitAtN63,64
+replace replace65,66
+replace replace66,67
+applyAll applyAll68,69
+applyAll applyAll69,70
+work work72,73
+work work73,74
+
+./commands/JsonAppend.hs,90
+module Main Main1,2
+main main10,11
+main main11,12
+work work29,30
+work work30,31
+
 ./commands/SortPath.hs,136
 module Main Main0,1
 main main11,12
@@ -19,8 +50,8 @@ sortByM sortByM45,46
 module Main Main1,2
 main main8,9
 main main9,10
-work work40,41
-work work41,42
+work work31,32
+work work32,33
 
 ./Setup.hs,15
 main main1,2

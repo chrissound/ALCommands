@@ -20,23 +20,20 @@ main = join . customExecParser (prefs showHelpOnError) $
             (  metavar "STRING"
             <> help "string parameter"
             )
-        <*> option auto
-            (  long "sort"
-            <> short 's'
-            <> metavar "NUMBER"
-            <> help "number parameter"
-            <> value "name"
+        <*> switch
+            (  long "full-path"
+            <> short 'f'
+            <> help ""
+            <> showDefault
+            )
+        <*> switch
+            (  long "relative-path"
+            <> short 'r'
+            <> help ""
             <> showDefault
             )
 
-  -- let opts = Commands <$> target <*> (target <|> target)
-  -- erm <- execParser $ info (opts <**> helper) (fullDesc <> progDesc "hmm")
-  -- case erm of
-  --   (Commands a' b') -> do
-  --     print a'
-  --     print b'
-  --     dirs <- getDirectories a'
-  --     mapM_ putStrLn dirs
-
-work :: String -> String -> IO ()
-work a _ = getDirectories a >>= printRaw
+work :: String -> Bool -> Bool -> IO ()
+work a True False =  getDirectoriesFullPath a >>= printRaw
+work a False True = getDirectoriesRelativePath a >>= printRaw
+work a True True = error "-f and -r is invalid"
