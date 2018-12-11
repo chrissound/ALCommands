@@ -28,7 +28,7 @@ library
 executable alcPrompt
   hs-source-dirs:      commands
   main-is:             Prompt.hs
-  build-depends:       base >=4.9 && <4.10
+  build-depends:       base >=4.9 && < 5
                      , optparse-applicative
                      , app
                      , split
@@ -36,7 +36,7 @@ executable alcPrompt
 executable alcListDir
   hs-source-dirs:      commands
   main-is:             ListDirs.hs
-  build-depends:       base >=4.9 && <4.10
+  build-depends:       base >=4.9 && < 5
                      , optparse-applicative
                      , directory
                      , filepath
@@ -47,7 +47,7 @@ executable alcListDir
 executable alcSortPath
   hs-source-dirs:      commands
   main-is:             SortPath.hs
-  build-depends:       base >=4.9 && <4.10
+  build-depends:       base >=4.9 && <5
                      , optparse-applicative
                      , directory
                      , filepath
